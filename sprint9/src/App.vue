@@ -2,10 +2,10 @@
   <div class="bg-gray-100 h-[100vh]">
     <nav class="bg-white shadow h-16 flex justify-between items-stretch">
       <div class="flex items-center gap-1">
-        <router-link :to="{name: 'home'}" class="inline-flex items-center h-full px-5 text-orange-500 font-bold">Home</router-link>
-        <router-link to="/login" class="inline-flex items-center h-full px-5 text-orange-500 font-semibold">Log In</router-link>
-        <router-link to="/" @click="handleSignOut" v-if="isLoggedIn" class="inline-flex items-center h-full px-5 text-orange-500 font-semibold">Log Out</router-link>
-        <router-link to="/signup" class="inline-flex items-center h-full px-5 text-orange-500 font-semibold">Sign Up</router-link>
+        <router-link :to="{name: 'home'}" class="inline-flex items-center h-full px-5 text-green-500 font-bold">Home</router-link>
+        <router-link to="/login" v-if="!isLoggedIn" class="inline-flex items-center h-full px-5 text-green-500 font-semibold">Log In</router-link>
+        <router-link to="/" @click="handleSignOut" v-if="isLoggedIn" class="inline-flex items-center h-full px-5 text-green-500 font-semibold">Log Out</router-link>
+        <router-link to="/signup" class="inline-flex items-center h-full px-5 text-green-500 font-semibold">Sign Up</router-link>
       </div>
 
         <div @click="toggleNav" class="flex md:hidden mr-4">
@@ -33,9 +33,9 @@
           md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0
         "
       >      
-      <router-link :to="{name: 'byName'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-orange-500">Search Meals</router-link>
-      <router-link :to="{name: 'byLetter'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-orange-500">Meals By Letter</router-link>
-      <router-link :to="{name: 'ingredients'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-orange-500">Meals By Ingredients</router-link>
+      <router-link :to="{name: 'byName'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Search Meals</router-link>
+      <router-link :to="{name: 'byLetter'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Meals By Letter</router-link>
+      <router-link :to="{name: 'ingredients'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Meals By Ingredients</router-link>
       </ul>
 
     </nav>
