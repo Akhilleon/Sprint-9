@@ -62,6 +62,7 @@ const login = () => {
   const auth = getAuth()
   signInWithEmailAndPassword (auth, email.value, password.value)
     .then((data) => {
+      console.log(data);
       console.log('Succesfully signed in!');
       console.log(auth.currentUser)
       router.push('/');

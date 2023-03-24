@@ -32,7 +32,7 @@
           space-y-4
           md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0
         "
-      >      
+      >   
       <router-link :to="{name: 'byName'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Search Meals</router-link>
       <router-link :to="{name: 'byLetter'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Meals By Letter</router-link>
       <router-link :to="{name: 'ingredients'}" class="inline-flex px-2 h-full items-center transition-colors hover:text-white hover:bg-green-500">Meals By Ingredients</router-link>
